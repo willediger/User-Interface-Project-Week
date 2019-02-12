@@ -22,7 +22,8 @@
 
 
 //calculated values
-@nav-horiz-padding-val: 100%*(@nav-horiz-padding/@container-max-width);
+@container-max-width-val: unit(@container-max-width, px);
+@nav-horiz-padding-val: unit(@nav-horiz-padding, px);
 @nav-width-val: (100% - 2*@nav-horiz-padding-val);
 @nav-border-size-val: unit(@nav-border-size, px);
 @nav-vertical-height-val: unit(@nav-vertical-height, px);
