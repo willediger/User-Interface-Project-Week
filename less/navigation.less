@@ -1,0 +1,36 @@
+nav {
+    .flex;
+    align-items: center;
+    color: @nav-color;
+    background-color: @nav-bg;
+    font-weight: bold;
+    height: @nav-vertical-height-val;
+    padding: 0 @nav-horiz-padding-val;
+    border: @nav-border-size-val solid @nav-border-color;
+    #logo {
+        font-size: 2.4rem;
+    }
+    &.collapsed {
+        #menu {
+            display: none;
+        }
+        #toggle {
+            background: url('../img/nav-hamburger.png') no-repeat;
+            width: 32px;
+            height: 21px;
+        }
+    }
+    &.expanded {
+        #menu {
+            .flex;
+            font-size: 4.8rem;
+            line-height: (85/48);
+            &:hover {
+                color: @nav-expanded-hover
+            }
+        }
+        #toggle {
+            background: url('../img/nav-hamburger-close.png') no-repeat;
+        }
+    }
+}

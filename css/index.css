@@ -133,3 +133,51 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #9BA6AF;
+  font-weight: bold;
+  height: 50px;
+  padding: 0 8.203125%;
+  border: 1px solid #979797;
+}
+nav #logo {
+  font-size: 2.4rem;
+}
+nav.collapsed #menu {
+  display: none;
+}
+nav.collapsed #toggle {
+  background: url('../img/nav-hamburger.png') no-repeat;
+  width: 32px;
+  height: 21px;
+}
+nav.expanded #menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4.8rem;
+  line-height: 1.77083333;
+}
+nav.expanded #menu:hover {
+  color: #222222;
+}
+nav.expanded #toggle {
+  background: url('../img/nav-hamburger-close.png') no-repeat;
+}
