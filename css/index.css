@@ -166,6 +166,9 @@ nav {
 nav #logo {
   font-size: 2.4rem;
 }
+nav #toggle:hover {
+  cursor: pointer;
+}
 nav.collapsed {
   position: fixed;
   width: 1024px;
