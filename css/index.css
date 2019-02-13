@@ -191,6 +191,8 @@ nav.collapsed #toggle {
   height: 21px;
 }
 nav.expanded {
+  position: fixed;
+  width: 1024px;
   height: 100vh;
 }
 nav.expanded #logo {
