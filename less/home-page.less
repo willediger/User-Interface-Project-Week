@@ -23,15 +23,35 @@
         color: @dark-charcoal;
     }
     .overview {
+        button {
+            .button(136px, 47px);
+        }
         .overview-item {
             .flex;
             flex-direction: row;
-            &.reversed {
-                flex-direction: row-reverse;
-            }
+            padding-bottom: 99px;
             .content {
                 .flex;
                 flex-direction: column;
+                justify-content: center;
+                padding-top: 6px;
+                p {
+                    padding-top: 15px;
+                    padding-bottom: 26px;
+                    width: 407px;
+                }
+            }
+            &.reversed {
+                flex-direction: row-reverse;
+                padding-right: 7px;
+                .content {
+                    padding-top: 0;
+                    padding-bottom: 6px;
+                    p {
+                        padding-top: 15px;
+                        padding-bottom: 30px;
+                    }
+                }
             }
         }
     }
