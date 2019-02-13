@@ -203,6 +203,9 @@ nav.expanded #toggle {
   width: 24px;
   height: 25px;
 }
+.jumbotron {
+  height: 598px;
+}
 .jumbotron h2 {
   font-size: 6.4rem;
   font-weight: bold;
