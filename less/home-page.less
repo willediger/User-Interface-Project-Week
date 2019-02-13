@@ -1,5 +1,8 @@
 .jumbotron {
     height: 598px;
+    img {
+        z-index: -1;
+    }
     h2 {
         font-size: 6.4rem;
         font-weight: bold;
@@ -8,5 +11,28 @@
         position: relative;
         top: -277px;
         left: 83px;
+        z-index: 0;
+    }
+}
+
+.main {
+    padding: 52px 85px;
+    h2 {
+        font-weight: bold;
+        font-size: 2.4rem;
+        color: @dark-charcoal;
+    }
+    .overview {
+        .overview-item {
+            .flex;
+            flex-direction: row;
+            &.reversed {
+                flex-direction: row-reverse;
+            }
+            .content {
+                .flex;
+                flex-direction: column;
+            }
+        }
     }
 }

@@ -152,6 +152,7 @@ a {
   color: inherit;
 }
 nav {
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,6 +207,9 @@ nav.expanded #toggle {
 .jumbotron {
   height: 598px;
 }
+.jumbotron img {
+  z-index: -1;
+}
 .jumbotron h2 {
   font-size: 6.4rem;
   font-weight: bold;
@@ -214,4 +218,26 @@ nav.expanded #toggle {
   position: relative;
   top: -277px;
   left: 83px;
+  z-index: 0;
+}
+.main {
+  padding: 52px 85px;
+}
+.main h2 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #222222;
+}
+.main .overview .overview-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.main .overview .overview-item.reversed {
+  flex-direction: row-reverse;
+}
+.main .overview .overview-item .content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
