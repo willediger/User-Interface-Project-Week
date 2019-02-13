@@ -171,16 +171,14 @@ nav {
   height: 50px;
   padding: 0 84px;
   border: 1px solid #979797;
+  position: fixed;
+  width: 1024px;
 }
 nav #logo {
   font-size: 2.4rem;
 }
 nav #toggle:hover {
   cursor: pointer;
-}
-nav.collapsed {
-  position: fixed;
-  width: 1024px;
 }
 nav.collapsed #menu {
   display: none;
@@ -191,8 +189,6 @@ nav.collapsed #toggle {
   height: 21px;
 }
 nav.expanded {
-  position: fixed;
-  width: 1024px;
   height: 100vh;
 }
 nav.expanded #logo {
