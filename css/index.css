@@ -133,6 +133,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
