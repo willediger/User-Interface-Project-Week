@@ -274,3 +274,6 @@ nav.expanded #toggle {
   padding-top: 15px;
   padding-bottom: 30px;
 }
+.main .projects h2 {
+  padding-bottom: 40px;
+}
