@@ -238,38 +238,39 @@ nav.expanded #toggle {
   font-size: 2.4rem;
   color: #222222;
 }
-.main .overview button {
+.main button {
   border: 1px solid black;
   width: 136px;
   height: 47px;
 }
-.main .overview .overview-item {
+.main .overview-item {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 99px;
 }
-.main .overview .overview-item .content {
+.main .overview-item .content {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   justify-content: center;
   padding-top: 6px;
 }
-.main .overview .overview-item .content p {
+.main .overview-item .content p {
   padding-top: 15px;
   padding-bottom: 26px;
   width: 407px;
 }
-.main .overview .overview-item.reversed {
+.main .overview-item.reversed {
+  padding-bottom: 93px;
   flex-direction: row-reverse;
   padding-right: 7px;
 }
-.main .overview .overview-item.reversed .content {
+.main .overview-item.reversed .content {
   padding-top: 0;
   padding-bottom: 6px;
 }
-.main .overview .overview-item.reversed .content p {
+.main .overview-item.reversed .content p {
   padding-top: 15px;
   padding-bottom: 30px;
 }
