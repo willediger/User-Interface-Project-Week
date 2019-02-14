@@ -297,22 +297,27 @@ nav.expanded #toggle {
   border: 1px solid white;
   background-color: #D8D8D8;
   position: absolute;
+  bottom: -34px;
 }
 .main .projects .project p:first-of-type {
   padding-top: 84px;
 }
 .main .projects .project p {
   font-size: 18px;
-  width: 433px;
+  width: 445px;
   display: inline-block;
   text-align: left;
   padding-bottom: 24px;
-  margin-right: 16px;
+  margin-right: 4px;
   line-height: 24px;
 }
 .main .projects .project.villas h3 {
   right: 0px;
-  bottom: -34px;
   padding-left: 10px;
+  padding-bottom: 4px;
+}
+.main .projects .project.outskirts h3 {
+  left: 0px;
+  padding-right: 1px;
   padding-bottom: 4px;
 }
