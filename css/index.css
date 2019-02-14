@@ -321,3 +321,7 @@ nav.expanded #toggle {
   padding-right: 1px;
   padding-bottom: 4px;
 }
+.main .projects .project.the-blocks h3 {
+  right: 0px;
+  padding-top: 2px;
+}
