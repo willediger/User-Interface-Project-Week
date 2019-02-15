@@ -180,6 +180,9 @@ nav #logo {
 nav #toggle:hover {
   cursor: pointer;
 }
+nav.collapsed {
+  box-shadow: 0px 1px 0px rgba(151, 151, 151, 0.5);
+}
 nav.collapsed #menu {
   display: none;
 }
