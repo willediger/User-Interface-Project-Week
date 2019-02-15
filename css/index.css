@@ -190,10 +190,11 @@ nav.collapsed #toggle {
 }
 nav.expanded {
   height: 100vh;
+  opacity: 0.93;
 }
 nav.expanded #logo {
   align-self: flex-start;
-  margin-top: 21px;
+  margin-top: 15px;
 }
 nav.expanded #menu {
   display: flex;
@@ -205,7 +206,7 @@ nav.expanded #menu {
   line-height: 1.77083333;
 }
 nav.expanded #menu a:hover {
-  color: #222222;
+  color: #493D3C;
 }
 nav.expanded #toggle {
   align-self: flex-start;
@@ -213,6 +214,73 @@ nav.expanded #toggle {
   background: url('../img/nav-hamburger-close.png') no-repeat;
   width: 24px;
   height: 25px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 250px;
+  background-color: #828282;
+  border: 1px solid #979797;
+  width: 100%;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.85714286;
+  padding-left: 83px;
+  padding-right: 83px;
+  padding-top: 61px;
+  padding-bottom: 5px;
+}
+footer .interested-addresses {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+footer .interested-addresses .interested input {
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  width: 279px;
+  height: 42px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: #999999;
+  padding-left: 7px;
+  margin-left: 1px;
+  margin-top: 14px;
+}
+footer .interested-addresses .interested input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: #999999;
+}
+footer .interested-addresses .interested .disclaimer {
+  margin-top: 3px;
+  margin-left: 2px;
+  font-size: 1.3rem;
+}
+footer .interested-addresses .addresses {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 2px;
+}
+footer .interested-addresses .addresses h3 {
+  padding-bottom: 4px;
+}
+footer .interested-addresses .addresses .california {
+  padding-left: 88px;
+}
+footer .interested-addresses .addresses .florida {
+  padding-left: 78px;
+}
+footer h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+footer small {
+  align-self: center;
+  font-size: 1.2rem;
 }
 .jumbotron {
   height: 598px;
@@ -230,62 +298,66 @@ nav.expanded #toggle {
   left: 83px;
   z-index: 0;
 }
-.main {
+main {
   padding: 52px 85px;
+  padding-bottom: 0;
 }
-.main h2 {
+main h2 {
   font-weight: bold;
   font-size: 2.4rem;
   color: #222222;
 }
-.main button {
+main button {
   border: 1px solid black;
   width: 136px;
   height: 47px;
 }
-.main .overview-item {
+main .overview-item {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 99px;
 }
-.main .overview-item .content {
+main .overview-item.smith-jones button {
+  padding-left: 1px;
+}
+main .overview-item .content {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   justify-content: center;
   padding-top: 6px;
 }
-.main .overview-item .content p {
+main .overview-item .content p {
   padding-top: 15px;
   padding-bottom: 26px;
   width: 407px;
 }
-.main .overview-item.reversed {
+main .overview-item.reversed {
   padding-bottom: 93px;
   flex-direction: row-reverse;
   padding-right: 7px;
 }
-.main .overview-item.reversed .content {
+main .overview-item.reversed .content {
   padding-top: 0;
   padding-bottom: 6px;
 }
-.main .overview-item.reversed .content p {
+main .overview-item.reversed .content p {
   padding-top: 15px;
   padding-bottom: 30px;
 }
-.main .projects h2 {
+main .projects h2 {
   padding-bottom: 40px;
 }
-.main .projects .project {
+main .projects .project {
   text-align: center;
   padding-bottom: 76px;
 }
-.main .projects .project .title {
+main .projects .project .title {
   position: relative;
   padding-bottom: 0;
 }
-.main .projects .project .title h3 {
+main .projects .project .title h3 {
   font-size: 2.4rem;
   letter-spacing: 8px;
   display: flex;
@@ -299,10 +371,10 @@ nav.expanded #toggle {
   position: absolute;
   bottom: -34px;
 }
-.main .projects .project p:first-of-type {
+main .projects .project p:first-of-type {
   padding-top: 84px;
 }
-.main .projects .project p {
+main .projects .project p {
   font-size: 18px;
   width: 445px;
   display: inline-block;
@@ -311,17 +383,17 @@ nav.expanded #toggle {
   margin-right: 4px;
   line-height: 24px;
 }
-.main .projects .project.villas h3 {
+main .projects .project.villas h3 {
   right: 0px;
   padding-left: 10px;
   padding-bottom: 4px;
 }
-.main .projects .project.outskirts h3 {
+main .projects .project.outskirts h3 {
   left: 0px;
   padding-right: 1px;
   padding-bottom: 4px;
 }
-.main .projects .project.the-blocks h3 {
+main .projects .project.the-blocks h3 {
   right: 0px;
   padding-top: 2px;
 }
