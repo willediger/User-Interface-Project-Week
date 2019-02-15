@@ -1,0 +1,66 @@
+footer {
+    .flex;
+    flex-direction: column;
+    height: 250px;
+    background-color: @footer-bg;
+    border: 1px solid @footer-border-color;
+    width: 100%;
+    color: @header-color;
+    font-size: 1.4rem;
+    line-height: (26/14);
+    padding-left: 83px;
+    padding-right: 83px;
+    padding-top: 61px;
+    padding-bottom: 5px;
+    .interested-addresses {
+        .flex;
+        flex-direction: row;
+        .interested {
+            input {
+                border: 1px solid @footer-input-border-color;
+                border-radius: 4px;
+                width: 279px;
+                height: 42px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.6rem;
+                color: @footer-input-color;
+                padding-left: 7px;
+                margin-left: 1px;
+                margin-top: 14px;
+                &::placeholder {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.6rem;
+                    color: @footer-input-color;
+                }
+            } //end of .input
+            .disclaimer {
+                margin-top: 3px;
+                margin-left: 2px;
+                font-size: 1.3rem;
+            }
+        } //end of .interested
+        .addresses {
+            .flex;
+            flex-direction: row;
+            padding-right: 2px;
+            h3 {
+                padding-bottom: 4px;
+            }
+            .california {
+                padding-left: 88px;
+            }
+            .florida {
+                padding-left: 78px;
+            }
+        }
+    }
+    h3 {
+        font-size: 2.0rem;
+        font-weight: bold;
+        line-height: (24/20);
+    }
+    small {
+        align-self: center;
+        font-size: 1.2rem;
+    }
+}
