@@ -7,7 +7,7 @@
         font-size: 6.4rem;
         font-weight: bold;
         line-height: 75/64;
-        color: white;
+        color: @header-color;
         position: relative;
         top: -281px;
         left: 83px;
@@ -15,14 +15,14 @@
     }
 } // end of .jumbotron
 
-.main {
+main {
     padding: 52px 85px;
+    padding-bottom: 0;
     h2 {
         font-weight: bold;
         font-size: 2.4rem;
         color: @dark-charcoal;
     }
-
     button {
         .button(136px, 47px);
     }
@@ -30,6 +30,12 @@
         .flex;
         flex-direction: row;
         padding-bottom: 99px;
+        
+        &.smith-jones {
+            button {
+                padding-left: 1px;
+            }
+        }
         .content {
             .flex;
             flex-direction: column;
