@@ -11,6 +11,10 @@ body {
 .container {
     max-width: @container-max-width-val;
     margin: 0 auto;
+    @media @phone {
+      .mobile-content-section;
+      max-width: 320px;
+    }
 }
 
 * {
@@ -20,4 +24,17 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+
+.mobile {
+    display: none;
+}
+@media @phone {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
 }
