@@ -10,6 +10,10 @@ nav {
     border: @nav-border-size-val solid @nav-border-color;
     position: fixed;
     width: @container-max-width-val;
+    @media @phone {
+        width: @mobile-width;
+        padding: 0 15px;
+    }
     #logo {
         font-size: 2.4rem;
     }
