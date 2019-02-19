@@ -1,7 +1,12 @@
 .jumbotron {
     height: 598px;
+    @media @phone {
+        height: 210px;
+        margin-bottom: 86px;
+    }
     img {
         z-index: -1;
+        max-width: 100%;
     }
     h2 {
         font-size: 6.4rem;
@@ -12,24 +17,48 @@
         top: -281px;
         left: 83px;
         z-index: 0;
+        @media @phone {
+            top: -156px;
+            left: 15px;
+            font-size: 3.6rem;
+        }
     }
 } // end of .jumbotron
 
 main {
     padding: 52px 85px;
     padding-bottom: 0;
+    @media @phone {
+        padding: 0;
+    }
     h2 {
         font-weight: bold;
         font-size: 2.4rem;
         color: @dark-charcoal;
+        @media @phone {
+            padding-top: 15px;
+        }
     }
     button {
         .button(136px, 47px);
+        @media @phone {
+            .button(100%, 47px);
+        }
+    }
+    .overview {
+        @media @phone {
+            padding-bottom: 24px;
+            padding: 0 15px;
+        }
     }
     .overview-item {
         .flex;
         flex-direction: row;
         padding-bottom: 99px;
+        @media @phone {
+            flex-direction: column-reverse;
+            padding-bottom: 0px;
+        }
         
         &.smith-jones {
             button {
@@ -45,29 +74,54 @@ main {
                 padding-top: 15px;
                 padding-bottom: 26px;
                 width: 407px;
+                max-width: 100%;
             }
         } //end of .overview-item.content
         &.reversed {
             padding-bottom: 93px;
             flex-direction: row-reverse;
             padding-right: 7px;
+            @media @phone {
+                flex-direction: column-reverse;
+                padding-bottom: 0px;
+                padding-right: 0px;
+                img {
+                    padding-top: 45px;
+                    max-width: 100%;
+                    padding-bottom: 8px;
+                }
+            }
             .content {
                 padding-top: 0;
                 padding-bottom: 6px;
                 p {
                     padding-top: 15px;
                     padding-bottom: 30px;
+                    @media @phone {
+                        padding-bottom: 26px
+                    }
                 }
             }
         } //end of .overview-item.reversed
     } //end of .overview-item
     .projects {
+        @media @phone {
+            width: 100%;
+            margin-top: 24px;
+        }
         h2 {
             padding-bottom: 40px;
+            @media @phone {
+                padding-left: 15px;
+                padding-bottom: 18px;
+            }
         }
         .project {
             text-align: center;
             padding-bottom: 76px;
+            @media @phone {
+                padding-bottom: 37px;
+            }
             .title {
                 position: relative;
                 padding-bottom: 0;
@@ -77,6 +131,14 @@ main {
                     .projectName(316px, 96px);
                     position: absolute;
                     bottom: -34px;
+                    @media @phone {
+                        .projectName(290px, 96px);
+                        border: none;
+                        bottom: -75px;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                    }
                 }
             }
             p:first-of-type {
@@ -85,17 +147,34 @@ main {
             p {
                 font-size: 18px;
                 width: 445px;
+                max-width: 100%;
                 display: inline-block;
                 text-align: left;
                 padding-bottom: 24px;
                 margin-right: 4px;
                 line-height: 24px;
+                @media @phone {
+                    padding: 0 4.6875%;
+                    margin-top: 17px;
+                    margin-right: 0;
+                    padding-bottom: 7px;
+                }
+            }
+            
+            @media @phone {
+                img {
+                    max-width: 100%;
+                }
             }
             &.villas {
                 h3 {
                     right: 0px;
                     padding-left: 10px;
                     padding-bottom: 4px;
+                    @media @phone {
+                        padding-top: 2px;
+                        padding-bottom: 0;
+                    }
                 }
             }
             &.outskirts {
@@ -103,12 +182,36 @@ main {
                     left: 0px;
                     padding-right: 1px;
                     padding-bottom: 4px;
+                    @media @phone {
+                        bottom: -77px;
+                        padding: 0;
+                        padding-top: 1px;
+                        padding-right: 3px;
+                    }
+                }
+                @media @phone {
+                    padding-bottom: 41px;
+                    p {
+                        margin-top: 19px;
+                        padding-bottom: 5px;
+                    }
                 }
             }
             &.the-blocks {
                 h3 {
                     right: 0px;
                     padding-top: 2px;
+                    @media @phone {
+                        bottom: -77px;
+                        padding-right: 3px;
+                    }
+                }
+                @media @phone {
+                    // padding-bottom: 41px;
+                    p {
+                        margin-top: 18px;
+                        padding-bottom: 5px;
+                    }
                 }
             }
         } // end of .project

@@ -41,7 +41,12 @@
 @nav-border-size-val: unit(@nav-border-size, px);
 @nav-vertical-height-val: unit(@nav-vertical-height, px);
 
+@mobile-width: 320px;
 
 // Mobile var
-@phone: (max-width: 320px);
-@tablet: (max-width: 800px);
+//commented out during dev
+// @phone: (max-width: @mobile-width); //note the VS Code tool doesn't understand the new syntax of less media query variables, so it says there's an error, but it compiles correctly and works as intended in the browser
+// @tablet: (max-width: 800px);
+
+//used in mobile dev to force mobile formatting on desktop displays
+@phone: (max-width: 1800px); 
