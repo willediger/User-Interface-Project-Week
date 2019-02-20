@@ -29,6 +29,8 @@
 
 //measurements in pixels
 @container-max-width: 1024;
+@tablet-max-width: 800;
+@mobile-max-width: 320;
 @nav-horiz-padding: 84;
 @nav-vertical-height: 50;
 @nav-border-size: 1;
@@ -36,17 +38,18 @@
 
 //calculated values
 @container-max-width-val: unit(@container-max-width, px);
+@mobile-max-width-val: unit(@mobile-max-width, px);
+@tablet-max-width-val: unit(@tablet-max-width, px);
+
 @nav-horiz-padding-val: unit(@nav-horiz-padding, px);
 @nav-width-val: (100% - 2*@nav-horiz-padding-val);
 @nav-border-size-val: unit(@nav-border-size, px);
 @nav-vertical-height-val: unit(@nav-vertical-height, px);
 
-@mobile-width: 320px;
+@mobile-width: @mobile-max-width-val;
+@tablet-width: @tablet-max-width-val;
 
 // Mobile var
 //commented out during dev
-// @phone: (max-width: @mobile-width); //note the VS Code tool doesn't understand the new syntax of less media query variables, so it says there's an error, but it compiles correctly and works as intended in the browser
-// @tablet: (max-width: 800px);
-
-//used in mobile dev to force mobile formatting on desktop displays
-@phone: (max-width: 1800px); 
+@phone: (max-width: 500px); //note the VS Code tool doesn't understand the new syntax of less media query variables, so it says there's an error, but it compiles correctly and works as intended in the browser
+@tablet: (max-width: @tablet-width);

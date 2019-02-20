@@ -1,8 +1,12 @@
 .jumbotron {
     height: 598px;
+    @media @tablet {
+        height: 350px;
+        margin-bottom: 86px;
+    }
+
     @media @phone {
         height: 210px;
-        margin-bottom: 86px;
     }
     img {
         z-index: -1;
@@ -17,6 +21,12 @@
         top: -281px;
         left: 83px;
         z-index: 0;
+        width: 50%;
+        @media @tablet {
+            top: -156px;
+            left: 15px;
+            font-size: 3.6rem;
+        }
         @media @phone {
             top: -156px;
             left: 15px;
@@ -26,7 +36,7 @@
 } // end of .jumbotron
 
 main {
-    padding: 52px 85px;
+    padding: 52px 100%*(85/@container-max-width);
     padding-bottom: 0;
     @media @phone {
         padding: 0;
@@ -48,14 +58,26 @@ main {
     .overview {
         @media @phone {
             padding-bottom: 24px;
-            padding: 0 15px;
+            padding: 0 100%*(15/@mobile-max-width);
         }
     }
     .overview-item {
         .flex;
         flex-direction: row;
         padding-bottom: 99px;
-        @media @phone {
+        figure {
+            width: 100%*(410/854);
+            @media @tablet {
+                width: 100%;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            overflow: auto;
+        }
+
+        @media @tablet {
             flex-direction: column-reverse;
             padding-bottom: 0px;
         }
@@ -70,10 +92,13 @@ main {
             flex-direction: column;
             justify-content: center;
             padding-top: 6px;
+            width: 100%*(407/854);
+            @media @tablet {
+                width: 100%;
+            }
             p {
                 padding-top: 15px;
                 padding-bottom: 26px;
-                width: 407px;
                 max-width: 100%;
             }
         } //end of .overview-item.content
@@ -81,19 +106,22 @@ main {
             padding-bottom: 93px;
             flex-direction: row-reverse;
             padding-right: 7px;
-            @media @phone {
+            @media @tablet {
                 flex-direction: column-reverse;
                 padding-bottom: 0px;
                 padding-right: 0px;
                 img {
                     padding-top: 45px;
-                    max-width: 100%;
                     padding-bottom: 8px;
                 }
             }
             .content {
                 padding-top: 0;
                 padding-bottom: 6px;
+                width: 100%*(407/847);
+                @media @phone {
+                    width: 100%;
+                }
                 p {
                     padding-top: 15px;
                     padding-bottom: 30px;
@@ -126,6 +154,9 @@ main {
             .title {
                 position: relative;
                 padding-bottom: 0;
+                img {
+                    max-width: 100%;
+                }
                 h3 {
                     font-size: 2.4rem;
                     letter-spacing: 8px;
@@ -147,7 +178,7 @@ main {
             }
             p {
                 font-size: 18px;
-                width: 445px;
+                width: 100%*(445/854);
                 max-width: 100%;
                 display: inline-block;
                 text-align: left;
@@ -155,6 +186,7 @@ main {
                 margin-right: 4px;
                 line-height: 24px;
                 @media @phone {
+                    width: 100%;
                     padding: 0 4.6875%;
                     margin-top: 17px;
                     margin-right: 0;
