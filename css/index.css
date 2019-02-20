@@ -251,18 +251,41 @@ footer {
   background-color: #828282;
   border: 1px solid #979797;
   width: 100%;
+  max-width: 100%;
   color: white;
   font-size: 1.4rem;
   line-height: 1.85714286;
-  padding-left: 83px;
-  padding-right: 83px;
-  padding-top: 61px;
-  padding-bottom: 5px;
+  padding: 61px 83px 5px 83px;
+}
+@media (max-width: 1800px) {
+  footer {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 4.375%;
+    padding-right: 5.9375%;
+    height: auto;
+  }
 }
 footer .interested-addresses {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+@media (max-width: 1800px) {
+  footer .interested-addresses {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width: 1800px) {
+  footer .interested-addresses .interested {
+    padding-bottom: 19px;
+  }
+}
+@media (max-width: 1800px) {
+  footer .interested-addresses .interested h3 {
+    padding-bottom: 17px;
+  }
 }
 footer .interested-addresses .interested input {
   border: 1px solid #CCCCCC;
@@ -281,10 +304,24 @@ footer .interested-addresses .interested input::placeholder {
   font-size: 1.6rem;
   color: #999999;
 }
+@media (max-width: 1800px) {
+  footer .interested-addresses .interested input {
+    width: 100%;
+    max-width: 100%;
+    height: 49px;
+    margin: 0;
+  }
+}
 footer .interested-addresses .interested .disclaimer {
   margin-top: 3px;
   margin-left: 2px;
   font-size: 1.3rem;
+}
+@media (max-width: 1800px) {
+  footer .interested-addresses .interested .disclaimer {
+    margin-left: 1px;
+    margin-top: 9px;
+  }
 }
 footer .interested-addresses .addresses {
   display: flex;
@@ -292,14 +329,37 @@ footer .interested-addresses .addresses {
   flex-direction: row;
   padding-right: 2px;
 }
+@media (max-width: 1800px) {
+  footer .interested-addresses .addresses {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+}
 footer .interested-addresses .addresses h3 {
   padding-bottom: 4px;
+}
+@media (max-width: 1800px) {
+  footer .interested-addresses .addresses .address {
+    padding-bottom: 22px;
+  }
+}
+footer .interested-addresses .addresses .florida {
+  padding-left: 78px;
+}
+@media (max-width: 1800px) {
+  footer .interested-addresses .addresses .florida {
+    padding-left: 0;
+    padding-bottom: 19px;
+  }
 }
 footer .interested-addresses .addresses .california {
   padding-left: 88px;
 }
-footer .interested-addresses .addresses .florida {
-  padding-left: 78px;
+@media (max-width: 1800px) {
+  footer .interested-addresses .addresses .california {
+    padding-left: 0;
+  }
 }
 footer h3 {
   font-size: 2rem;
@@ -309,6 +369,11 @@ footer h3 {
 footer small {
   align-self: center;
   font-size: 1.2rem;
+}
+@media (max-width: 1800px) {
+  footer small {
+    align-self: flex-start;
+  }
 }
 .jumbotron {
   height: 598px;
@@ -439,6 +504,7 @@ main .overview-item.reversed .content p {
   main .projects {
     width: 100%;
     margin-top: 24px;
+    margin-bottom: 35px;
   }
 }
 main .projects h2 {
@@ -565,7 +631,7 @@ main .projects .project.the-blocks h3 {
 }
 @media (max-width: 1800px) {
   main .projects .project.the-blocks p {
-    margin-top: 18px;
+    margin-top: 19px;
     padding-bottom: 5px;
   }
 }

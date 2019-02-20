@@ -5,17 +5,36 @@ footer {
     background-color: @footer-bg;
     border: 1px solid @footer-border-color;
     width: 100%;
+    max-width: 100%;
     color: @header-color;
     font-size: 1.4rem;
     line-height: (26/14);
-    padding-left: 83px;
-    padding-right: 83px;
-    padding-top: 61px;
-    padding-bottom: 5px;
+    padding: 61px 83px 5px 83px;
+    @media @phone {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-left: 4.375%;
+        padding-right: 5.9375%;
+        height: auto;
+    }
     .interested-addresses {
         .flex;
         flex-direction: row;
+        @media @phone {
+            flex-direction: column;
+            padding: 0;
+        }
+
         .interested {
+            @media @phone {
+                padding-bottom: 19px;
+            }
+
+            h3 {
+                @media @phone {
+                    padding-bottom: 17px;
+                }
+            }
             input {
                 border: 1px solid @footer-input-border-color;
                 border-radius: 4px;
@@ -32,25 +51,52 @@ footer {
                     font-size: 1.6rem;
                     color: @footer-input-color;
                 }
+                @media @phone {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 49px;
+                    margin: 0;
+                }
             } //end of .input
             .disclaimer {
                 margin-top: 3px;
                 margin-left: 2px;
                 font-size: 1.3rem;
+                @media @phone {
+                    margin-left: 1px;
+                    margin-top: 9px;
+                }
             }
         } //end of .interested
         .addresses {
             .flex;
             flex-direction: row;
             padding-right: 2px;
+            @media @phone {
+                flex-direction: column;
+                padding: 0;
+                padding-bottom: 10px;
+            }
             h3 {
                 padding-bottom: 4px;
             }
-            .california {
-                padding-left: 88px;
+            .address {
+                @media @phone {
+                    padding-bottom: 22px;
+                }
             }
             .florida {
                 padding-left: 78px;
+                @media @phone {
+                    padding-left: 0;
+                    padding-bottom: 19px;
+                }
+            }
+            .california {
+                padding-left: 88px;
+                @media @phone {
+                    padding-left: 0;
+                }
             }
         }
     }
@@ -62,5 +108,8 @@ footer {
     small {
         align-self: center;
         font-size: 1.2rem;
+        @media @phone {
+            align-self: flex-start;
+        }
     }
 }
