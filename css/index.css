@@ -260,7 +260,7 @@ footer {
   padding-top: 61px;
   padding-bottom: 5px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer {
     padding-top: 23px;
     padding-bottom: 23px;
@@ -276,18 +276,18 @@ footer .interested-addresses {
   width: 100%;
   max-width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses {
     flex-direction: column;
     padding: 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .interested {
     padding-bottom: 19px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .interested h3 {
     padding-bottom: 17px;
   }
@@ -309,7 +309,7 @@ footer .interested-addresses .interested input::placeholder {
   font-size: 1.6rem;
   color: #999999;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .interested input {
     width: 100%;
     max-width: 100%;
@@ -322,7 +322,7 @@ footer .interested-addresses .interested .disclaimer {
   margin-left: 2px;
   font-size: 1.3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .interested .disclaimer {
     margin-left: 1px;
     margin-top: 9px;
@@ -334,7 +334,7 @@ footer .interested-addresses .addresses {
   flex-direction: row;
   width: 60.86448598%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .addresses {
     flex-direction: column;
     padding: 0;
@@ -347,7 +347,7 @@ footer .interested-addresses .addresses h3 {
 footer .interested-addresses .addresses .address {
   width: 131px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .addresses .address {
     padding-bottom: 22px;
   }
@@ -355,13 +355,13 @@ footer .interested-addresses .addresses .address {
 footer .interested-addresses .addresses .florida {
   margin-right: 2.87907869%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .addresses .florida {
     padding-left: 0;
     padding-bottom: 19px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .interested-addresses .addresses .california {
     padding-left: 0;
   }
@@ -375,7 +375,7 @@ footer small {
   align-self: center;
   font-size: 1.2rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer small {
     align-self: flex-start;
   }
@@ -398,7 +398,7 @@ footer small {
   z-index: -1;
   max-width: 100%;
 }
-.jumbotron h2 {
+.jumbotron h1 {
   font-size: 6.4rem;
   font-weight: bold;
   line-height: 1.171875;
@@ -410,14 +410,14 @@ footer small {
   width: 50%;
 }
 @media (max-width: 800px) {
-  .jumbotron h2 {
+  .jumbotron h1 {
     top: -156px;
     left: 15px;
     font-size: 3.6rem;
   }
 }
 @media (max-width: 500px) {
-  .jumbotron h2 {
+  .jumbotron h1 {
     top: -156px;
     left: 15px;
     font-size: 3.6rem;
