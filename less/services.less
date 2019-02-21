@@ -1,0 +1,67 @@
+.services {
+    nav {
+        
+        padding: 0 100%*((@nav-horiz-padding-val - 8)/@container-max-width);
+    }
+    .jumbotron {
+        height: 250px;
+        h1 {
+            font-size: 6.4rem;
+            font-weight: bold;
+            line-height: 75/64;
+            color: @header-color;
+            position: relative;
+            top: -100px;
+            left: 85px;
+            z-index: 0;
+            width: 50%;
+        }
+    } // end of .jumbotron
+    main {
+        padding: 51px 100%*(85/@container-max-width);
+        padding-right: 100%*(84/@container-max-width);
+        padding-bottom: 65px;
+        .services-description {
+            margin-bottom: 41px;
+        }
+        p {
+            padding: 0;
+            padding-left: 1px;
+            line-height: (26/16);
+        }
+    }
+    .topics {
+        .flex;
+        width: 100%;
+        button {
+            width: 185px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 2rem;
+            &.active-tab {
+                background-color: @services-tab-active;
+                color: white;
+            }
+        }
+    }
+    .cards-container {
+        margin-top: 46px;
+        .card {
+            flex-direction: column;
+            h2 {
+                padding-bottom: 7px;
+            }
+            .content {
+                .flex;
+                flex-direction: row;
+                .text {
+                    padding-top: 1px;
+                    width: 50%;
+                    p {
+                        padding-bottom: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

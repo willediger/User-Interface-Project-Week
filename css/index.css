@@ -680,3 +680,69 @@ main .projects .project.the-blocks h3 {
     padding-bottom: 5px;
   }
 }
+.services nav {
+  padding: 0 7.421875%;
+}
+.services .jumbotron {
+  height: 250px;
+}
+.services .jumbotron h1 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 1.171875;
+  color: white;
+  position: relative;
+  top: -100px;
+  left: 85px;
+  z-index: 0;
+  width: 50%;
+}
+.services main {
+  padding: 51px 8.30078125%;
+  padding-right: 8.203125%;
+  padding-bottom: 65px;
+}
+.services main .services-description {
+  margin-bottom: 41px;
+}
+.services main p {
+  padding: 0;
+  padding-left: 1px;
+  line-height: 1.625;
+}
+.services .topics {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.services .topics button {
+  width: 185px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.services .topics button.active-tab {
+  background-color: #5E9FB9;
+  color: white;
+}
+.services .cards-container {
+  margin-top: 46px;
+}
+.services .cards-container .card {
+  flex-direction: column;
+}
+.services .cards-container .card h2 {
+  padding-bottom: 7px;
+}
+.services .cards-container .card .content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.services .cards-container .card .content .text {
+  padding-top: 1px;
+  width: 50%;
+}
+.services .cards-container .card .content .text p {
+  padding-bottom: 26px;
+}
