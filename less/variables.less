@@ -1,0 +1,58 @@
+// Color pointers
+@nav-bg: @gray-blue;
+@nav-color: white;
+// @nav-expanded-hover: @dark-charcoal;
+@nav-expanded-hover: @off-charcoal;
+@nav-border-color: @lighter-gray;
+
+@main-bg: white;
+@main-color: @dark-charcoal;
+
+@footer-bg: @gray;
+@footer-border-color: @lighter-gray;
+@footer-input-border-color: @even-lighter-gray;
+@footer-input-color: @medium-light-gray;
+
+@header-color: white;
+
+@services-tab-active: @royal-blue;
+
+
+// colors
+@dark-charcoal: #222222;
+@gray-blue: #9BA6AF;
+@even-lighter-gray: #CCCCCC;
+@medium-light-gray: #999999;
+@lighter-gray: #979797;
+@lighter-gray-half-alpha: rgba(151, 151, 151, 0.5);
+@gray: #828282;
+@off-charcoal: #493D3C;
+@royal-blue: #5E9FB9;
+
+
+//measurements in pixels
+@container-max-width: 1024;
+@tablet-max-width: 800;
+@mobile-max-width: 320;
+@nav-horiz-padding: 84;
+@nav-vertical-height: 50;
+@nav-border-size: 1;
+
+
+//calculated values
+@container-max-width-val: unit(@container-max-width, px);
+@mobile-max-width-val: unit(@mobile-max-width, px);
+@tablet-max-width-val: unit(@tablet-max-width, px);
+
+@nav-horiz-padding-val: unit(@nav-horiz-padding, px);
+@nav-width-val: (100% - 2*@nav-horiz-padding-val);
+@nav-border-size-val: unit(@nav-border-size, px);
+@nav-vertical-height-val: unit(@nav-vertical-height, px);
+
+@mobile-width: @mobile-max-width-val;
+@tablet-width: @tablet-max-width-val;
+
+// Mobile var
+//commented out during dev
+@phone: (max-width: 500px); //note the VS Code tool doesn't understand the new syntax of less media query variables, so it says there's an error, but it compiles correctly and works as intended in the browser
+@tablet: (max-width: @tablet-width);

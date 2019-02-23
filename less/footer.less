@@ -1,0 +1,119 @@
+footer {
+    .flex;
+    flex-direction: column;
+    height: 250px;
+    background-color: @footer-bg;
+    border: 1px solid @footer-border-color;
+    width: 100%;
+    max-width: 100%;
+    color: @header-color;
+    font-size: 1.4rem;
+    line-height: (26/14);
+    padding: 0 100%*(83/@container-max-width);
+    padding-top: 61px;
+    padding-bottom: 5px;
+    @media @tablet {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-left: 4.375%;
+        padding-right: 5.9375%;
+        height: auto;
+    }
+    .interested-addresses {
+        .flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        @media @tablet {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .interested {
+            @media @tablet {
+                padding-bottom: 19px;
+            }
+
+            h3 {
+                @media @tablet {
+                    padding-bottom: 17px;
+                }
+            }
+            input {
+                border: 1px solid @footer-input-border-color;
+                border-radius: 4px;
+                width: 100%*(279/281.67);
+                height: 42px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.6rem;
+                color: @footer-input-color;
+                padding-left: 7px;
+                margin-left: 1px;
+                margin-top: 14px;
+                &::placeholder {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.6rem;
+                    color: @footer-input-color;
+                }
+                @media @tablet {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 49px;
+                    margin: 0;
+                }
+            } //end of .input
+            .disclaimer {
+                margin-top: 3px;
+                margin-left: 2px;
+                font-size: 1.3rem;
+                @media @tablet {
+                    margin-left: 1px;
+                    margin-top: 9px;
+                }
+            }
+        } //end of .interested
+        .addresses {
+            .flex;
+            flex-direction: row;
+            width: 100%*(521/856);
+            @media @tablet {
+                flex-direction: column;
+                padding: 0;
+                padding-bottom: 10px;
+            }
+            h3 {
+                padding-bottom: 4px;
+            }
+            .address {
+                width: 131px;
+                @media @tablet {
+                    padding-bottom: 22px;
+                }
+            }
+            .florida {
+                margin-right: 100%*(15/521);
+                @media @tablet {
+                    padding-left: 0;
+                    padding-bottom: 19px;
+                }
+            }
+            .california {
+                @media @tablet {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    h3 {
+        font-size: 2.0rem;
+        font-weight: bold;
+        line-height: (24/20);
+    }
+    small {
+        align-self: center;
+        font-size: 1.2rem;
+        @media @tablet {
+            align-self: flex-start;
+        }
+    }
+}
